@@ -8,5 +8,28 @@ extern class Client extends Socket
 }
 
 typedef ClientOptions = {
-    ?query:String
+    ?path:String;
+    ?reconnection:Bool;
+    ?reconnectionAttempts:Int;
+    ?reconnectionDelay:Int;
+    ?reconnectionDelayMax:Int;
+    ?randomizationFactor:Int;
+    ?timeout:Int;
+    ?autoConnect:Bool;
+    ?query:String;
+    ?parser:Dynamic;
+    ?upgrade:Bool;
+    ?forceJSONP:Bool;
+    ?jsonp:Bool;
+    ?forceBase64:Bool;
+    ?enablesXDR:Bool;
+    ?timestampRequests:Bool;
+    ?timestampParam:String;
+    ?policyPort:Int;
+    ?transports:Array<String>;
+    ?transportOption:Dynamic;
+    ?rememberUpgrade:Bool;
+    ?onlyBinaryUpgrades:Bool;
+    ?requestTimeout:Int;
+    ?protocols:Array<String>;
 }
